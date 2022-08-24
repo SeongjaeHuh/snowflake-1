@@ -51,16 +51,6 @@ select SYSTEM$AUTHORIZE_PRIVATELINK ( '<aws_id>' , '<federated_token>' );
 
 ![image](https://user-images.githubusercontent.com/52474199/172308669-6a3d8b5f-a95f-477c-8fe1-0c8ac937df39.png)
 
-'''
-
-"privatelink-account-name":"ab25370.ap-northeast-2.privatelink",
-"privatelink-vpce-id":"com.amazonaws.vpce.ap-northeast-2.vpce-svc-0870e889ef8b7b491",
-"privatelink-account-url":"ab25370.ap-northeast-2.privatelink.snowflakecomputing.com",
-"regionless-privatelink-account-url":"atixoaj-smilegate.privatelink.snowflakecomputing.com",
-"privatelink_ocsp-url":"ocsp.ab25370.ap-northeast-2.privatelink.snowflakecomputing.com",
-"privatelink-connection-urls":"[]"
-
-'''
 
 
 ## 2. AWS VPC 환경 구성하기
@@ -73,8 +63,6 @@ Snowflake 계정 관리자(즉, ACCOUNTADMIN 시스템 역할을 가진 사용�
 ```
 select system$get_privatelink_config();
 ```
-![image](https://user-images.githubusercontent.com/52474199/170653808-964bc5b4-a69a-4317-aff0-e01f24b1caff.png)
-
 
 #### 1). AWS VPC Account로 로그인 > 엔드포인트 메뉴 선택
 
